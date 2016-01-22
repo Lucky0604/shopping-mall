@@ -1,0 +1,31 @@
+body {
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif !important;
+}
+
+p {
+    margin: .5rem 0 !important;
+}
+
+.small {
+    font-size: .3rem;
+    font-color: #eee;
+    display: block;
+}
+
+.mall-title{
+    font-size: .6rem;
+}
+
+.swiper-container {
+    padding-bottom: 0 !important;
+}
+
+.list-block {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+.red {
+    color: #FF530D;
+}
+

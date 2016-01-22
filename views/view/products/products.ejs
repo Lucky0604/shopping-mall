@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../template/head %>
+</head>
+
+<body>
+    <div class="page page-current" id="product-list">
+        <header class="bar bar-nav">
+            <h1 class="title">Product</h1>
+        </header>
+        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+            <div class="list-block">
+                <ul class="list-container"></ul>
+            </div>
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="car1">
+        <header class="bar bar-nav">
+            <a href="#product-list" class="button button-link button-nav pull-left back">
+                <span class="icon icon-left">Back</span>
+            </a>
+            <h1 class="title">Item details</h1>
+        </header>
+        <div class="content">
+        </div>
+    </div>
+    <!-- bottom bar -->
+    <% include ../../template/foot %>
+    <script src="js/products.js"></script>
+    <script></script>
+</body>
+
+</html>
