@@ -20,12 +20,39 @@
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
+
+				<div class="list-block">
+					<ul>
+						<a href="#" class="open-about">
+							<li class="item-content item-link">
+								<div class="item-inner">
+									<div class="item-title">Name: </div>
+									<div class="item-after">Durex</div>
+								</div>
+							</li>
+						</a>
+						
+					</ul>
+				</div>
+			</div>
+
+			<!-- pop up -->
+			<div class="popup popup-about">
+				<div class="content-block">
+					<p>About</p>
+					<p><a href="#" class="close-popup">Close popup</a></p>
+					<p>More info...</p>
+				</div>
 			</div>
 			
 		</div>
 
 
 		<% include ../../template/foot %>
-
+		<script>
+		$(document).on('click', 'popup-about', function() {
+			$.popup('.popup-about');
+		})
+		</script>
 	</body>
 </html>
