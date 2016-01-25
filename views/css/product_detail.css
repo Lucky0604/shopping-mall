@@ -9,7 +9,14 @@
 .p_price {
 	color: red;
 }
-
+.price_title {
+	font-size: 1.2rem;
+	font-family: "微软雅黑", sans-serif;
+}
 .swiper-container {
 	padding-bottom: 0 !important;
+}
+
+p {
+	margin: 0 !important;
 }
