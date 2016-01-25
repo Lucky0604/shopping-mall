@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<% include ../../template/head %>
+		<link rel="stylesheet" href="../../css/product_detail.css" >
 	</head>
 
 	<body>
-		<div class="page">
+		<div class="page" id="product_detail">
 			<header class="bar bar-nav">
 				<a href="#" class="icon icon-left pull-left"></a>
 				<a href="#" class="icon icon-refresh pull-right"></a>
@@ -17,13 +18,19 @@
 						<div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="" style="width: 100%;"></div>
 						<div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="" style="width: 100%"></div>
 						<div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="" style="width: 100%"></div>
-						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-pagination" style="line-height: 4 !important;"></div>
+				</div>
+				<div class="p_content">
+					<div class="p_detail">
+						<span>热卖单品</span>
+						<p class="p_price">￥10.00</p>
 					</div>
 				</div>
 
 				<div class="list-block">
 					<ul>
-						<a href="#" class="open-about">
+						<a href="#" class="open-about" data-popup=".popup-about">
 							<li class="item-content item-link">
 								<div class="item-inner">
 									<div class="item-title">Name: </div>
@@ -35,24 +42,23 @@
 					</ul>
 				</div>
 			</div>
-
-			<!-- pop up -->
-			<div class="popup popup-about">
-				<div class="content-block">
-					<p>About</p>
-					<p><a href="#" class="close-popup">Close popup</a></p>
-					<p>More info...</p>
-				</div>
-			</div>
 			
+			
+			
+			
+		</div>
+
+		<!-- pop up -->
+		<div class="popup popup-about">
+			<div class="content-block">
+				<p>About</p>
+				<p><a href="#" class="close-popup">Close popup</a></p>
+				<p>More info...</p>
+			</div>
 		</div>
 
 
 		<% include ../../template/foot %>
-		<script>
-		$(document).on('click', 'popup-about', function() {
-			$.popup('.popup-about');
-		})
-		</script>
+		<script src="../../js/product_detail.js"></script>
 	</body>
 </html>

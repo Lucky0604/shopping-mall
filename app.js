@@ -18,6 +18,9 @@ app.get('/shopping', function(req, res) {
 app.get('/products/product_detail', function(req, res) {
 	res.render('view/product_detail/product_detail');
 })
+app.get('/test', function(req, res) {
+	res.render('view/test/test');
+})
 
 app.listen(3000, '127.0.0.1', function() {
 	console.log('server is listening on port 3000');

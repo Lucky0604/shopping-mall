@@ -1,0 +1,15 @@
+.p_detail {
+	background: #fff;
+	height: 4rem;
+	padding: .5rem;
+}
+.p_content {
+	width: 100%;
+}
+.p_price {
+	color: red;
+}
+
+.swiper-container {
+	padding-bottom: 0 !important;
+}
