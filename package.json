@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.11.1"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.2",
+    "browser-sync": "^2.11.1",
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
   },
   "dependencies": {
     "ejs": "^2.3.4",
