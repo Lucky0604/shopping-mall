@@ -35,7 +35,7 @@ module.exports = function(app, express) {
                     res.send(err);
                 } else {
                     // return the products
-                    res.json(products);
+                    res.json({success: true, data: products});
                 }
             });
         });
