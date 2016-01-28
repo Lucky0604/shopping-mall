@@ -40,5 +40,16 @@ module.exports = function(app, express) {
             });
         });
     
+    // add product_detail
+    apiRouter.route('/products/:product_id')
+        // get single product detail
+        .get(function(req, res) {
+            Product.findById(req.params.product_id, function(err, product) {
+                if (err) {
+                    res.send(err);
+                };
+                res.json(product);
+            });
+        })
     return apiRouter;
 }
