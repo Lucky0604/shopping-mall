@@ -48,8 +48,49 @@ module.exports = function(app, express) {
                 if (err) {
                     res.send(err);
                 };
-                res.json(product);
+                res.json({success: true, data: product});
             });
         })
+        // update the user with this id
+        .put(function(req, res) {
+            Product.findById(req.params.product_id, function(err, product) {
+                if (err) {
+                    res.send(err);
+                };
+
+                // set the new product information if it exists in the request
+                if (req.body.p_name) {
+                    product.p_name = req.body.p_name;
+                };
+                if (req.body.p_color) {
+                    product.p_color = req.body.p_color;
+                }
+                if (req.body.p_size) {
+                    product.p_size = req.body.p_size;
+                }
+
+                // save the user
+                product.save(function(err) {
+                    if (err) {
+                        res.send(err);
+                    } else {
+                        // return a message
+                        res.json({message: 'Product updated'});
+                    }
+                })
+            })
+        })
+        // delete the user with this id
+        .delete(function(req, res) {
+            Product.remove({
+                _id: req.params.product_id
+            }, function(err, product) {
+                if (err) {
+                    res.send(err);
+                } else {
+                    res.json({message: 'Successfully deleted!'});
+                };
+            })
+        });
     return apiRouter;
 }

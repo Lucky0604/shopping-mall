@@ -12,7 +12,7 @@ $(function () {
             var html = '';
             for (var i = 0; i < lastIndex + number; i++) {
                 console.log(data[i]);
-                html += '<div class="col-50 p_list"><div class="card demo-card-header-pic"><div class="card-header color-white no-border no-padding" valign="bottom"><a href="/products/product_detail" class="external"><img class="card-cover" src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" /></a></div><div class="card-content"><div class="card-content-inner"><p class="color-gray">发表于' + data[i].p_name + '</p><p>产品名称：' + i + '</p></div></div></div></div>';
+                html += '<div class="col-50 p_list"><div class="card demo-card-header-pic"><div class="card-header color-white no-border no-padding" valign="bottom"><a href="/products/product_detail/:product_id" class="external"><img class="card-cover" src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" /></a></div><div class="card-content"><div class="card-content-inner"><p class="color-gray">发表于' + data[i].p_name + '</p><p>产品名称：' + i + '</p></div></div></div></div>';
 
             }
             $('.infinite-scroll-bottom #product_list_card').append(html);

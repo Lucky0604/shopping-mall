@@ -6,6 +6,10 @@ $(function() {
 			$.popup('.popup-about');
 		});
         
+        GetJsonData.getJsonNoData('/api/products/:product_id', function(res) {
+        	console.log(res.data);
+        	
+        })
         
 	})
 
