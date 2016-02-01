@@ -43,7 +43,7 @@ app.get('/products', function(req, res) {
 app.get('/shopping', function(req, res) {
 	res.render('view/shoppinglist/shopping');
 })
-app.get('/products/product_detail', function(req, res) {
+app.get('/products/:product_id', function(req, res) {
 	res.render('view/product_detail/product_detail');
 })
 app.get('/test', function(req, res) {

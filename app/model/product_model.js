@@ -4,6 +4,7 @@ var mongoose = require('mongoose'),
 
 // product schema
 var ProductSchema = new Schema({
+	_id: String,
     p_name : String,
     p_color: {type: String, required: true},
     p_size: {type: String}
