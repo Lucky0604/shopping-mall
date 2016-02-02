@@ -2,9 +2,10 @@ $(function() {
 	'use strict';
 
 	console.log('123');
-    GetJsonData.getJsonNoData('/api/products/:product_id', function(res) {
-        console.log(res.data);
-        	
+	var url = window.location.pathname;
+	var id = url.substring(url.lastIndexOf('/') + 1);
+    GetJsonData.getJsonNoData('/api/products/' + id, function(res) {
+        console.log(res); 	
     })
 
 	$(document).on('pageInit', '#product_detail', function(e, id, page) {
@@ -19,3 +20,5 @@ $(function() {
 
 	$.init();
 });
+
+
