@@ -1,4 +1,5 @@
 module.exports = {
     'port': process.env.PORT || 3000,
-    'database': 'mongodb://localhost:27017/shopping'
+    'database': 'mongodb://localhost:27017/shopping',
+    'secret': 'lovelovelove'
 }

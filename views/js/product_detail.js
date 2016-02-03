@@ -17,9 +17,6 @@ $(function() {
             $('#p_color').html(data.p_color);
             $('#p_size').html(data.p_size);
         })
-    })
-
-
-
+    });
     $.init();
 });

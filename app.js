@@ -26,7 +26,9 @@ mongoose.connect(config.database);
 
 // API ROUTES
 var apiRoutes = require('./app/routes/api')(app, express);
+var userRoutes = require('./app/routes/userApi')(app, express);
 app.use('/api', apiRoutes);
+app.use('/api', userRoutes);
 
 
 app.set('view engine', 'ejs');
@@ -48,7 +50,10 @@ app.get('/products/:product_id', function(req, res) {
 })
 app.get('/test', function(req, res) {
 	res.render('view/test/test');
-})
+});
+app.get('/login', function(req, res) {
+    res.render('view/login/login');
+});
 
 app.listen(config.port);
 console.log('server is working on port : ' + config.port);
